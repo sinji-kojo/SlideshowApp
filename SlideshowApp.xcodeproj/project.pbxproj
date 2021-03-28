@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B327AB6D26106B440006FF8F /* Slideshow_image in Resources */ = {isa = PBXBuildFile; fileRef = B327AB6C26106B440006FF8F /* Slideshow_image */; };
 		B32DA852260A0909005D3957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32DA851260A0909005D3957 /* AppDelegate.swift */; };
 		B32DA854260A0909005D3957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32DA853260A0909005D3957 /* SceneDelegate.swift */; };
 		B32DA856260A0909005D3957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32DA855260A0909005D3957 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B327AB6C26106B440006FF8F /* Slideshow_image */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Slideshow_image; path = ../../../../Downloads/Slideshow_image; sourceTree = "<group>"; };
 		B32DA84E260A0909005D3957 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32DA851260A0909005D3957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B32DA853260A0909005D3957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B32DA855260A0909005D3957 /* ViewController.swift */,
 				B32DA857260A0909005D3957 /* Main.storyboard */,
 				B32DA85A260A090A005D3957 /* Assets.xcassets */,
+				B327AB6C26106B440006FF8F /* Slideshow_image */,
 				B32DA85C260A090A005D3957 /* LaunchScreen.storyboard */,
 				B32DA85F260A090A005D3957 /* Info.plist */,
 			);
@@ -127,6 +130,7 @@
 				B32DA85E260A090A005D3957 /* LaunchScreen.storyboard in Resources */,
 				B32DA85B260A090A005D3957 /* Assets.xcassets in Resources */,
 				B32DA859260A0909005D3957 /* Main.storyboard in Resources */,
+				B327AB6D26106B440006FF8F /* Slideshow_image in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

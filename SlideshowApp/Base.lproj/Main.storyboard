@@ -16,12 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ClG-69-5zk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ClG-69-5zk">
                                 <rect key="frame" x="20" y="144" width="374" height="600"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="600" id="Jdd-AP-6I7"/>
-                                    <constraint firstAttribute="width" constant="600" id="Mkd-eo-FEj"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="sBq-U1-TKw" appends="YES" id="LQl-gc-98t"/>
@@ -60,11 +59,15 @@
                             <constraint firstItem="FVn-Xh-pzW" firstAttribute="top" secondItem="ClG-69-5zk" secondAttribute="bottom" constant="50" id="QKf-SZ-Sed"/>
                             <constraint firstItem="w56-ly-FyP" firstAttribute="top" secondItem="ClG-69-5zk" secondAttribute="bottom" constant="50" id="S34-uY-B8a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FVn-Xh-pzW" secondAttribute="trailing" constant="50" id="Tyf-rA-RGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ClG-69-5zk" secondAttribute="trailing" constant="34" id="WmL-Qj-Ccg"/>
+                            <constraint firstItem="ClG-69-5zk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKF-sd-nmc"/>
                             <constraint firstItem="GVo-9T-Dt4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="oxw-dd-KXK"/>
                             <constraint firstItem="w56-ly-FyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlQ-bm-pGQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="w56-ly-FyP" id="aSS-Kv-BVy"/>
+                        <outlet property="nextButton" destination="GVo-9T-Dt4" id="CiS-Sm-Rcs"/>
                         <outlet property="slideimage" destination="ClG-69-5zk" id="Uih-5k-Yks"/>
                     </connections>
                 </viewController>
