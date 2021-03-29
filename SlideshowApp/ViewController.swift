@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var slideimage: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
-    
+    @IBOutlet weak var runButton: UIButton!
+
     // スライドショーに使用するインデックスを宣言
     var nowIndex:Int = 0
     
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
         UIImage(named: "C")!,
         UIImage(named: "D")!
     ]
-    
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         slideimage.image = imageArray[nowIndex]
@@ -79,8 +80,7 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
             nextButton.isEnabled = false
             backButton.isEnabled = false
-            nextButton.isHidden = true
-            backButton.isHidden = true
+            runButton.setTitle("停止", for: .normal)
         } else {
             // タイマーを停止する
             timer.invalidate()
@@ -88,12 +88,16 @@ class ViewController: UIViewController {
             timer = nil
             nextButton.isEnabled = true
             backButton.isEnabled = true
-            nextButton.isHidden = false
-            backButton.isHidden = false
+            runButton.setTitle("再生", for: .normal)
         }
     }
-    @IBAction func onTapImage(_ sender: AnyObject) {
-        // セグエを使用して画面を遷移
-        performSegue(withIdentifier: "result", sender: nil)
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // segueから遷移先の情報を取得する
+            let SlideshowDetail:SlideshowDetail = segue.destination as! SlideshowDetail
+            // 遷移先で宣言しているimageindexに値を代入して渡す
+            SlideshowDetail.imageIndex = nowIndex
     }
 }

@@ -14,6 +14,7 @@
 		B32DA859260A0909005D3957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32DA857260A0909005D3957 /* Main.storyboard */; };
 		B32DA85B260A090A005D3957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32DA85A260A090A005D3957 /* Assets.xcassets */; };
 		B32DA85E260A090A005D3957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32DA85C260A090A005D3957 /* LaunchScreen.storyboard */; };
+		B3C6F4D12610821400D674F7 /* SlideshowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F4D02610821400D674F7 /* SlideshowDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B32DA85A260A090A005D3957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32DA85D260A090A005D3957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B32DA85F260A090A005D3957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C6F4D02610821400D674F7 /* SlideshowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B32DA851260A0909005D3957 /* AppDelegate.swift */,
 				B32DA853260A0909005D3957 /* SceneDelegate.swift */,
 				B32DA855260A0909005D3957 /* ViewController.swift */,
+				B3C6F4D02610821400D674F7 /* SlideshowDetail.swift */,
 				B32DA857260A0909005D3957 /* Main.storyboard */,
 				B32DA85A260A090A005D3957 /* Assets.xcassets */,
 				B327AB6C26106B440006FF8F /* Slideshow_image */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32DA856260A0909005D3957 /* ViewController.swift in Sources */,
+				B3C6F4D12610821400D674F7 /* SlideshowDetail.swift in Sources */,
 				B32DA852260A0909005D3957 /* AppDelegate.swift in Sources */,
 				B32DA854260A0909005D3957 /* SceneDelegate.swift in Sources */,
 			);
