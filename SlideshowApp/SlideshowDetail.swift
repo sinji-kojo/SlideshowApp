@@ -16,15 +16,14 @@ class SlideshowDetail: UIViewController {
     var height:CGFloat = 0
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0
-    
+        
     var imageArray:[UIImage] = [
-        UIImage(named: "A")!,
-        UIImage(named: "B")!,
-        UIImage(named: "C")!,
-        UIImage(named: "D")!
+        UIImage(named: "A.jpeg")!,
+        UIImage(named: "B.jpeg")!,
+        UIImage(named: "C.jpeg")!,
+        UIImage(named: "D.jpeg")!
     ]
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //

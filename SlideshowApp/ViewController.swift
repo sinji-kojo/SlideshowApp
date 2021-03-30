@@ -18,14 +18,15 @@ class ViewController: UIViewController {
     
     // スライドショーに使用するタイマーを宣言
     var timer: Timer!
-    
+        
     // スライドショーさせる画像の配列を宣言
     var imageArray:[UIImage] = [
-        UIImage(named: "A")!,
-        UIImage(named: "B")!,
-        UIImage(named: "C")!,
-        UIImage(named: "D")!
+        UIImage(named: "A.jpeg")!,
+        UIImage(named: "B.jpeg")!,
+        UIImage(named: "C.jpeg")!,
+        UIImage(named: "D.jpeg")!
     ]
+
     //
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,5 +100,15 @@ class ViewController: UIViewController {
             let SlideshowDetail:SlideshowDetail = segue.destination as! SlideshowDetail
             // 遷移先で宣言しているimageindexに値を代入して渡す
             SlideshowDetail.imageIndex = nowIndex
+    }
+    @IBAction func buttonTap(_ sender: Any) {
+        if (timer == nil) {
+        } else {
+            timer.invalidate()
+            timer = nil
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            runButton.setTitle("再生", for: .normal)
+        }
     }
 }
